@@ -10,35 +10,103 @@
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap" rel="stylesheet" />
 		<link rel="icon" href="./img/kula-ikona.png" type="image/gif" />
 		<link rel="stylesheet" href="./css/main.css" />
+
+		<script src="https://kit.fontawesome.com/be9be6bea2.js" crossorigin="anonymous"></script>
+		<script>
+			function NavFunction() {
+				var x = document.getElementById('nav-Top')
+				if (x.className === 'topnav') {
+					x.className += ' responsive'
+				} else {
+					x.className = 'topnav'
+				}
+			}
+		</script>
 	</head>
 	<body>
 		<header>
-			<div class="baner"></div>
-		<nav class="menu">
-			<a href="#">Home</a>
-			<div class="dropdown">
-				<a href="#">Klub</a>
-				<ul>
-					<li>Zarząd</li>
-					<li>Historia</li>
-				</ul>
+			<nav>
+				<div class="topnav" id="nav-Top">
+					<a href="#" class="active">Home</a>
+					<a href="#">Klub</a>
+					<a href="#">Petanque</a>
+					<a href="#">Galeria</a>
+					<a href="#">Kontakt</a>
+					<a href="#">Linki</a>
+					<a href="javascript:void(0);" class="icon" onclick="NavFunction()">
+						<i class="fa fa-bars"></i>
+					</a>
+				</div>
+			</nav>
+			<div class="baner">
+				<div class="facebook">
+					<a href="https://www.facebook.com/MyslenickiKlubPetanque" target="_blank"
+						><i class="fab fa-facebook-square"></i> <span> /MyslenickiKlubPetanque</span></a
+					>
+					<div class="bg"></div>
+				</div>
 			</div>
-			<a href="#">Petanque</a>
-			<a href="#">Galeria</a>
-			<a href="#">Kontakt</a>
-			<a href="#">Linki</a>
-		</nav>
-	</header>
+		</header>
 		<div class="slider"></div>
 		<main>
-			<aside></aside>
-			<div class="board">
-				<section></section>
-				<section></section>
-				<section></section>
+			<aside class="menu-side menuOrder1 wrapper">
+				<h3>Menu-bok</h3>
+				<ul>
+					<li>Lorem ipsum dolor sit amet consectetur.</li>
+					<li>Lorem ipsum dolor sit amet consectetur.</li>
+					<li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+					<li>Lorem ipsum dolor sit.</li>
+				</ul>
+			</aside>
+			<aside class="menu-side menuOrder2 wrapper">
+				<h3>Menu-bok</h3>
+				<ul>
+					<li>Lorem ipsum dolor sit amet consectetur.</li>
+					<li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+					<li>Lorem ipsum dolor sit amet consectetur.</li>
+					<li>Lorem ipsum dolor consectetur.</li>
+				</ul>
+			</aside>
+			<div class="board boardOrder wrapper">
+				<section>
+					<h2>Tytul</h2>
+					<p class="date"><i class="far fa-calendar-alt"></i>Opublikowany: 25 marzec 2021</p>
+					<img src="./img/p3-small.png" alt="kulki do petanque" />
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima ipsum eum laborum laboriosam natus? Dolorum
+						ratione laboriosam optio distinctio culpa?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
+						recusandae maiores saepe iusto quo sequi voluptate sed, minus at deleniti? ratione laboriosam optio
+						distinctio culpa?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta recusandae maiores saepe
+						iusto quo sequi voluptate sed, minus at deleniti? ratione laboriosam optio distinctio culpa?Lorem ipsum
+						dolor sit amet, consectetur adipisicing elit. Dicta recusandae maiores saepe iusto quo sequi voluptate sed,
+						minus at deleniti?
+					</p>
+				</section>
+				<section>
+					<h2>Tytul</h2>
+					<p class="date"><i class="far fa-calendar-alt"></i>Opublikowany: 24 marzec 2021</p>
+					<img src="./img/p1-small.jpg" alt="kulki do petanque" />
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima ipsum eum laborum laboriosam natus? Dolorum
+						ratione laboriosam optio distinctio culpa? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima
+						ipsum eum laborum laboriosam natus? Dolorum ratione laboriosam optio distinctio culpa? Lorem ipsum, dolor
+						sit amet consectetur adipisicing elit. Minima ipsum eum laborum laboriosam natus? Dolorum ratione laboriosam
+						optio distinctio culpa?
+					</p>
+				</section>
+				<section>
+					<h2>Tytul</h2>
+					<p class="date"><i class="far fa-calendar-alt"></i>Opublikowany: 23 marzec 2021</p>
+					<img src="./img/p2-small.jpg" alt="kulki do petanque" />
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima ipsum eum laborum laboriosam natus? Dolorum
+						ratione laboriosam optio distinctio culpa?
+					</p>
+				</section>
 			</div>
-			<aside></aside>
 		</main>
-		<footer></footer>
+		<footer>
+			<p>&copy; 2021 | Myślenicki Klub Petanque</p>
+		</footer>
 	</body>
 </html>
