@@ -188,6 +188,7 @@ footer p {
 	justify-content: center;
 	flex-wrap: nowrap;
 	align-items: flex-start;
+	padding: 15px;
 }
 .zarzad ul {
 	list-style: none;
