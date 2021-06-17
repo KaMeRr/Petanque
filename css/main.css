@@ -13,6 +13,12 @@
 body {
 	font-family: 'Raleway', sans-serif;
 	color: #252c2c;
+	/*
+	background-position: 0px 17px;
+	background-repeat: no-repeat;
+	background-image: url(;
+	*/
+	
 }
 
 .wrapper {
