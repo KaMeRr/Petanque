@@ -30,6 +30,7 @@ function showSlides(n) {
 	slides[slideIndex - 1].style.display = 'block'
 	dots[slideIndex - 1].className += ' active'
 }
+// Czas zmiany slajdów w ms 5000ms=5sekund
 setInterval(() => {
 	plusSlides(1)
-}, 3000)
+}, 4000)

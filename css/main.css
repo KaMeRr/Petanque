@@ -113,14 +113,29 @@ main {
 	color: #779e13;
 	list-style-type: square;
 }
-.menu-side ul li {
-	padding-top: 7px;
+.menu-side ul a li {
+	padding: 10px 0;
 	font-size: 13px;
-	border-top: 0.5px solid rgba(185, 185, 185, 0.486);
 }
-.menu-side ul li:first-child {
+.menu-side ul a li:first-child {
 	padding-top: 0;
 	border-top: none;
+}
+.menu-side ul a {
+	text-decoration: none;
+}
+.menu-side ul a:active {
+	text-decoration: none;
+	color: #475e0e;
+}
+.menu-side ul a:visited {
+	text-decoration: none;
+	color: #475e0e;
+}
+.menu-side ul a:hover {
+	text-decoration: none;
+	color: #171f05;
+	font-weight: bold;
 }
 
 /* Tablica główna */
@@ -173,6 +188,36 @@ footer p {
 
 /* -----------------Strona #3------------------ */
 /* ------------------Petanque----------------- */
+#petanque {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: nowrap;
+	margin: 30px auto;
+}
+.petanque-img {
+	margin: 0px 10px;
+	border-radius: 10px;
+	border: 3px solid black;
+}
+.petanque-text {
+	background-color: #fff;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+.petanque-text ol {
+	padding: 0px 30px 30px;
+}
+.petanque-text ol li {
+	padding-top: 12px;
+}
+.petanque-text h2 {
+	text-align: center;
+	background-color: #333;
+	color: var(--primaryfont);
+	padding-bottom: 5px;
+	letter-spacing: 1px;
+}
 
 /* -----------------Strona #4------------------ */
 /* ------------------Galeria----------------- */
@@ -346,7 +391,8 @@ footer p {
 	.menu-side {
 		margin: 0 10px;
 		min-width: 100px;
-		max-height: 250px;
+		height: 200px;
+		width: 300px;
 		border-radius: 10px;
 	}
 	.menu-side ul li {
@@ -374,9 +420,9 @@ footer p {
 	.slideshow-container {
 		border: 5px #000 solid;
 		display: block;
-		max-width: 1000px;
+		width: 800px;
+		margin: 0 auto;
 		position: relative;
-		margin: auto;
 		height: 480px;
 	}
 	/* Przyciski następny i poprzedni obrazek */
