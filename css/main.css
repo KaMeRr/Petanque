@@ -9,13 +9,19 @@
 	--primaryfont: #f2f2f2;
 	--secondarybgc: #475e0e;
 }
-
+html {
+	height: 100%;
+}
 body {
 	font-family: 'Montserrat', sans-serif;
 	color: #252c2c;
 	background-color: #ececec;
+	background-image: url('../img/tlo.jpg');
+	/* background-position: 0px 250px; */
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
 }
-
 .wrapper {
 	margin: 0 auto;
 	max-width: 1200px;
@@ -59,13 +65,14 @@ nav {
 
 /* Baner */
 .baner {
+	display: none;
 	position: relative;
 	height: 25vh;
-	background-image: url('../img/baner.jpg');
-	background-position: center;
-	background-size: cover;
+	background-image: url('../img/baner.png');
+	/* background-position: center; */
+	background-repeat: no-repeat;
+	background-size: contain;
 }
-/* Facebook - odnośnik */
 .facebook {
 	position: absolute;
 	right: 4px;
@@ -167,7 +174,6 @@ main {
 
 /* -----------------Stopka------------------ */
 footer {
-	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -180,11 +186,47 @@ footer {
 }
 footer p {
 	padding-bottom: 4px;
-	font-size: 14px;
+	font-size: 8px;
 }
 
 /* -----------------Strona #2------------------ */
 /* -------------------Klub----------------- */
+.club {
+	display: flex;
+	margin: 20px auto;
+	justify-content: center;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+	padding: 15px 15px 40px 15px;
+	background-color: #fff;
+	border-radius: 10px;
+	width: auto;
+	height: auto;
+	font-size: 8px;
+}
+
+.zarzad ul {
+	list-style: none;
+}
+.zarzad ul li {
+	padding: 10px 5px;
+	border-top: 2px dotted #333;
+}
+.zarzad h2 {
+	text-align: center;
+}
+.historia {
+	width: 70%;
+	margin-left: 10px;
+	padding-left: 10px;
+	border-left: 1px dotted #333;
+	text-align: justify;
+}
+.historia h2 {
+	text-align: center;
+	border-bottom: 2px dotted #333;
+	margin-bottom: 7px;
+}
 
 /* -----------------Strona #3------------------ */
 /* ------------------Petanque----------------- */
@@ -221,53 +263,112 @@ footer p {
 
 /* -----------------Strona #4------------------ */
 /* ------------------Galeria----------------- */
-#gallery {
+.gallery {
+	width: 100%;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	padding: 5px;
-	border: 3px solid #333;
-}
-
-.item {
-	margin: 5px;
-	width: 50%;
-}
-.club {
-	display: flex;
-	margin: 20px auto;
-	justify-content: center;
-	flex-wrap: nowrap;
+	flex-direction: column;
+	justify-content: space-around;
 	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.gallery-item {
+	width: 140px;
+	border: 1px solid #ccc;
+	margin: 5px;
+	background-color: #fff;
+}
+.gallery-item:hover {
+	border: 1px solid #777;
+}
+.gallery-description {
 	padding: 15px;
-}
-.zarzad ul {
-	list-style: none;
-}
-.zarzad ul li {
-	padding: 3px 0;
-	border-top: 2px dotted #333;
-}
-.zarzad h2 {
+	font-size: 12px;
 	text-align: center;
 }
-.historia {
-	margin-left: 20px;
-	padding-left: 20px;
-	max-width: 45vw;
-	border-left: 1px dotted #333;
-}
-.historia h2 {
-	text-align: center;
-	border-bottom: 2px dotted #333;
+.gallery-item img {
+	width: 100%;
+	height: auto;
 }
 
 /* -----------------Strona #5------------------ */
 /* ------------------Kontakt----------------- */
+.contact {
+	background-color: #fff;
+	border: 2px solid black;
+	border-radius: 5px;
+	margin: 60px auto;
+	width: 60vw;
+	text-align: center;
+}
+
+.contact h2 {
+	background-color: var(--primarybgc);
+	color: var(--primaryfont);
+	text-align: center;
+	letter-spacing: 1px;
+	padding: 10px;
+}
+.contact section ul li {
+	list-style-type: none;
+	line-height: 30px;
+	font-size: 14px;
+}
+.text-decoration {
+	text-decoration: none;
+	color: black;
+}
+
+.text-decoration:hover {
+	color: var(--secondarybgc);
+	text-decoration: underline;
+}
+
+.zarabie {
+	margin: 30px auto;
+	background-color: #fff;
+	border: 2px solid black;
+	border-radius: 5px;
+	width: 60vw;
+	text-align: center;
+}
+.zarabie h2 {
+	background-color: var(--primarybgc);
+	color: var(--primaryfont);
+	text-align: center;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
 
 /* -----------------Strona #6------------------ */
 /* ------------------Linki----------------- */
+.links h3 {
+	background-color: var(--primarybgc);
+	color: var(--primaryfont);
+	letter-spacing: 1px;
+}
+.links-item {
+	margin: 30px auto;
+	width: 100%;
+	background-color: #fff;
+	border: 2px solid black;
+	border-radius: 10px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.links-item p {
+	padding: 8px 0;
+	text-decoration: none;
+}
+.links-item a {
+	text-decoration: none;
+	color: black;
+}
+.links-item a:hover {
+	color: var(--secondarybgc);
+	text-decoration: underline;
+}
 
 /* ------------------Media------------------ */
 /* ----------------- <600px ------------------ */
@@ -314,6 +415,15 @@ footer p {
 	.menu-side h3 {
 		font-size: 20px;
 	}
+	.gallery-item {
+		width: 240px;
+	}
+	.gallery-item {
+		width: 240px;
+		border: 1px solid #ccc;
+		margin: 5px;
+		background-color: #fff;
+	}
 
 	/* -----------------Strona #4------------------ */
 	/* ------------------Galeria----------------- */
@@ -321,11 +431,23 @@ footer p {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
-		justify-content: flex-start;
+		justify-content: space-around;
 		padding: 5px;
 	}
 	.item {
 		width: 48%;
+	}
+
+	.club {
+		font-size: 14px;
+	}
+
+	footer p {
+		font-size: 10px;
+	}
+
+	.zarabie iframe {
+		height: 500px;
 	}
 }
 
@@ -341,16 +463,24 @@ footer p {
 	.menu-side h3 {
 		font-size: 24px;
 	}
+
+	.club {
+		font-size: 18px;
+	}
+
+	footer p {
+		font-size: 12px;
+	}
 }
 
 /* ----------------- <1200px ------------------ */
 @media (min-width: 1200px) {
-	body {
-		background-image: url('../img/download.jpg');
+	/* body {
+		background-image: url('../img/tlo.jpg');
 		background-position: 0px 250px;
 		background-repeat: no-repeat;
 		background-size: cover;
-	}
+	} */
 
 	header {
 		display: flex;
@@ -391,7 +521,7 @@ footer p {
 	.menu-side {
 		margin: 0 10px;
 		min-width: 100px;
-		height: 200px;
+		height: 170px;
 		width: 300px;
 		border-radius: 10px;
 	}
@@ -509,5 +639,26 @@ footer p {
 		to {
 			opacity: 1;
 		}
+	}
+
+	.gallery-item {
+		width: 360px;
+	}
+
+	.club {
+		margin: 20px auto;
+		padding: 15px;
+		font-size: 14px;
+	}
+	.zarzad {
+		width: 40%;
+	}
+	.historia {
+		width: 60%;
+		margin-left: 20px;
+		padding-left: 20px;
+	}
+	.links {
+		width: 800px;
 	}
 }

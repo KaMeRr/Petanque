@@ -33,4 +33,4 @@ function showSlides(n) {
 // Czas zmiany slajdów w ms 5000ms=5sekund
 setInterval(() => {
 	plusSlides(1)
-}, 4000)
+}, 5000)
