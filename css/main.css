@@ -11,182 +11,183 @@
 }
 
 body {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	color: #252c2c;
-	/*
-	background-position: 0px 17px;
-	background-repeat: no-repeat;
-	background-image: url(;
-	*/
-	
+	background-color: #ececec;
 }
 
 .wrapper {
 	margin: 0 auto;
-	width: 100%;
 	max-width: 1200px;
+	width: 100%;
 }
 img {
 	vertical-align: middle;
 }
 /* ----------------------------------------------------------- */
 
-/* nav */
+/* -----------------Header------------------ */
 nav {
-	border-bottom: 5px solid var(--secondarybgc);
 	background-color: var(--primarybgc);
+	border-bottom: 5px solid var(--secondarybgc);
 }
 
 .topnav {
-	overflow: hidden;
 	max-width: 1200px;
+	overflow: hidden;
 }
-
 .topnav a {
 	float: left;
 	display: block;
-	color: var(--primaryfont);
-	text-align: center;
 	padding: 14px 16px;
-	text-decoration: none;
+	color: var(--primaryfont);
 	font-size: 17px;
+	text-align: center;
+	text-decoration: none;
 }
-
 .topnav a:hover {
-	background-color: #ddd;
 	color: black;
+	background-color: #ddd;
 }
-
 .topnav a.active {
-	background-color: var(--secondarybgc);
 	color: white;
+	background-color: var(--secondarybgc);
 }
-
 .topnav .icon {
 	display: none;
 }
 
-/* baner */
+/* Baner */
 .baner {
+	position: relative;
 	height: 25vh;
 	background-image: url('../img/baner.jpg');
 	background-position: center;
 	background-size: cover;
-	position: relative;
 }
-
+/* Facebook - odnośnik */
 .facebook {
 	position: absolute;
 	right: 4px;
 	bottom: 2px;
 	background-color: rgba(0, 0, 0, 0.582);
 }
-
 .facebook a {
-	text-decoration: none;
 	color: #4267b2;
 	font-size: 10px;
+	text-decoration: none;
 }
 
-/* slider */
+/* -----------------Slider------------------ */
 .slideshow-container {
 	display: none;
 }
 
-/* main */
+/* -----------------Main------------------ */
 main {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	flex-wrap: wrap;
 }
-
 .main {
 	margin: 10px auto 40px;
 }
 
+/* Menu boczne */
 .menu-side {
-	padding-top: 20px;
+	margin-bottom: 10px;
 	min-width: 280px;
+	background-color: #fff;
+	border-radius: 10px;
 }
 .menu-side h3 {
 	margin-bottom: 20px;
-	background-color: var(--primarybgc);
-	color: var(--primaryfont);
 	padding: 6px 10px;
+	color: var(--primaryfont);
 	font-size: 15px;
+	background-color: var(--primarybgc);
 }
-
 .menu-side ul {
 	padding-left: 30px;
-	list-style-type: square;
 	color: #779e13;
+	list-style-type: square;
 }
-
 .menu-side ul li {
-	font-size: 13px;
 	padding-top: 7px;
+	font-size: 13px;
 	border-top: 0.5px solid rgba(185, 185, 185, 0.486);
 }
-
 .menu-side ul li:first-child {
 	padding-top: 0;
 	border-top: none;
 }
 
+/* Tablica główna */
 .board {
 	display: flex;
 	flex-direction: column;
+	margin-top: 10px;
 	padding: 0 10px;
-}
-.date {
-	font-size: 14px;
-	margin: 4px 0;
+	background-color: #fff;
+	border-radius: 10px;
 }
 .board section {
 	padding: 20px 0;
 }
 
+.date {
+	margin: 4px 0;
+	font-size: 14px;
+}
 .board section h2 {
 	color: var(--secondarybgc);
 	border-bottom: 2px solid var(--secondarybgc);
 }
-
 .board section img {
+	float: left;
 	padding: 10px;
 	width: 100%;
-	float: left;
 }
 
+/* -----------------Stopka------------------ */
 footer {
-	height: 40px;
-	width: 100%;
-	text-align: center;
 	position: relative;
 	display: flex;
-	color: var(--primaryfont);
-	background-color: var(--primarybgc);
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
+	height: 40px;
+	color: var(--primaryfont);
+	text-align: center;
+	background-color: var(--primarybgc);
 }
-
 footer p {
-	font-size: 14px;
 	padding-bottom: 4px;
+	font-size: 14px;
 }
 
+/* -----------------Strona #2------------------ */
+/* -------------------Klub----------------- */
+
+/* -----------------Strona #3------------------ */
+/* ------------------Petanque----------------- */
+
+/* -----------------Strona #4------------------ */
+/* ------------------Galeria----------------- */
 #gallery {
-	border: 3px solid #333;
 	display: flex;
 	flex-wrap: wrap;
-	padding: 5px;
 	justify-content: center;
 	align-items: center;
+	padding: 5px;
+	border: 3px solid #333;
 }
+
 .item {
-	width: 50%;
 	margin: 5px;
+	width: 50%;
 }
 .club {
 	display: flex;
@@ -207,15 +208,24 @@ footer p {
 	text-align: center;
 }
 .historia {
+	margin-left: 20px;
+	padding-left: 20px;
 	max-width: 45vw;
 	border-left: 1px dotted #333;
-	padding-left: 20px;
-	margin-left: 20px;
 }
 .historia h2 {
 	text-align: center;
 	border-bottom: 2px dotted #333;
 }
+
+/* -----------------Strona #5------------------ */
+/* ------------------Kontakt----------------- */
+
+/* -----------------Strona #6------------------ */
+/* ------------------Linki----------------- */
+
+/* ------------------Media------------------ */
+/* ----------------- <600px ------------------ */
 @media (max-width: 600px) {
 	.topnav a:not(:first-child) {
 		display: none;
@@ -239,16 +249,19 @@ footer p {
 	}
 }
 
+/* ----------------- <768px ------------------ */
 @media (min-width: 768px) {
 	.topnav a {
 		font-size: 20px;
 	}
+
+	.facebook a {
+		font-size: 18px;
+	}
+
 	.board section img {
 		width: 60%;
 		max-width: 600px;
-	}
-	.facebook a {
-		font-size: 18px;
 	}
 	.menu-side ul li {
 		font-size: 14px;
@@ -256,34 +269,44 @@ footer p {
 	.menu-side h3 {
 		font-size: 20px;
 	}
+
+	/* -----------------Strona #4------------------ */
+	/* ------------------Galeria----------------- */
 	#gallery {
 		display: flex;
 		flex-wrap: wrap;
-		padding: 5px;
-		justify-content: flex-start;
 		align-items: center;
+		justify-content: flex-start;
+		padding: 5px;
 	}
 	.item {
 		width: 48%;
 	}
 }
 
+/* ----------------- <992px ------------------ */
 @media (min-width: 992px) {
+	.facebook a {
+		font-size: 22px;
+	}
+
 	.menu-side ul li {
 		font-size: 18px;
 	}
 	.menu-side h3 {
 		font-size: 24px;
 	}
-	.facebook a {
-		font-size: 22px;
-	}
 }
 
+/* ----------------- <1200px ------------------ */
 @media (min-width: 1200px) {
-	.board section img {
-		width: 50%;
+	body {
+		background-image: url('../img/download.jpg');
+		background-position: 0px 250px;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
+
 	header {
 		display: flex;
 		flex-direction: column;
@@ -291,14 +314,21 @@ footer p {
 	.nav {
 		order: 2;
 	}
-	.baner {
-		order: 1;
-	}
 	.topnav {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
+	.topnav a {
+		font-size: 16px;
+	}
+	.baner {
+		order: 1;
+	}
+	.facebook a {
+		font-size: 22px;
+	}
+
 	main.main {
 		flex-wrap: nowrap;
 		justify-content: center;
@@ -314,7 +344,10 @@ footer p {
 		order: 2;
 	}
 	.menu-side {
+		margin: 0 10px;
 		min-width: 100px;
+		max-height: 250px;
+		border-radius: 10px;
 	}
 	.menu-side ul li {
 		font-size: 13px;
@@ -322,99 +355,90 @@ footer p {
 	.menu-side h3 {
 		font-size: 16px;
 	}
-	.facebook a {
-		font-size: 22px;
-	}
 	.board {
-		max-width: 700px;
 		padding: 0 20px;
+		max-width: 700px;
+		border-radius: 10px;
+	}
+	.board section img {
+		width: 50%;
 	}
 	.board .date {
 		font-size: 11px;
 	}
-
 	.board section .article {
 		font-size: 13px;
 	}
-	.topnav a {
-		font-size: 16px;
-	}
-	/* Slideshow container */
+
+	/* Slider */
 	.slideshow-container {
+		border: 5px #000 solid;
 		display: block;
 		max-width: 1000px;
 		position: relative;
 		margin: auto;
 		height: 480px;
 	}
-
-	/* Next & previous buttons */
+	/* Przyciski następny i poprzedni obrazek */
 	.prev,
 	.next {
-		cursor: pointer;
 		position: absolute;
 		top: 50%;
-		width: auto;
-		padding: 16px;
 		margin-top: -22px;
+		padding: 16px;
+		width: auto;
 		color: white;
-		font-weight: bold;
 		font-size: 18px;
-		transition: 0.6s ease;
+		font-weight: bold;
 		border-radius: 0 3px 3px 0;
 		user-select: none;
+		cursor: pointer;
+		transition: 0.6s ease;
 	}
-
-	/* Position the "next button" to the right */
+	/* Prawa pozycja następnego przycisku */
 	.next {
 		right: 0;
 		border-radius: 3px 0 0 3px;
 	}
-
-	/* On hover, add a black background color with a little bit see-through */
 	.prev:hover,
 	.next:hover {
 		background-color: rgba(0, 0, 0, 0.8);
 	}
-
-	/* Caption text */
 	.text {
-		color: #f2f2f2;
-		font-size: 15px;
-		padding: 8px 12px;
 		position: absolute;
 		bottom: 8px;
+		padding: 8px 12px;
 		width: 100%;
+		color: #f2f2f2;
+		font-size: 15px;
 		text-align: center;
 	}
-
-	/* Number text (1/3 etc) */
+	/* Numeracja obrazka */
 	.numbertext {
-		color: #f2f2f2;
-		font-size: 12px;
-		padding: 8px 12px;
 		position: absolute;
 		top: 0;
+		padding: 8px 12px;
+		color: #f2f2f2;
+		font-size: 12px;
 	}
 
-	/* The dots/bullets/indicators */
+	/* Kropka obrazka */
 	.dot {
-		cursor: pointer;
-		height: 15px;
-		width: 15px;
-		margin: 0 2px;
-		background-color: #bbb;
-		border-radius: 50%;
 		display: inline-block;
+		margin: 0 2px;
+		width: 15px;
+		height: 15px;
+		background-color: #bbb;
+		border: 1px solid black;
+		border-radius: 50%;
+		cursor: pointer;
 		transition: background-color 0.6s ease;
 	}
-
 	.active,
 	.dot:hover {
 		background-color: #717171;
 	}
-
-	/* Fading animation */
+	/* Animacja zanikania */
 	.fade {
 		-webkit-animation-name: fade;
 		-webkit-animation-duration: 1.5s;
@@ -424,7 +448,6 @@ footer p {
 	.mySlides {
 		display: none;
 	}
-
 	@-webkit-keyframes fade {
 		from {
 			opacity: 0.4;
@@ -433,7 +456,6 @@ footer p {
 			opacity: 1;
 		}
 	}
-
 	@keyframes fade {
 		from {
 			opacity: 0.4;
